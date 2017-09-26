@@ -1,0 +1,14 @@
+{
+  "name": "lab5-server",
+  "version": "1.0.0",
+  "description": "For lab5",
+  "main": "lab5-server.js",
+  "scripts": {
+    "test": "runtests"
+  },
+  "keywords": [
+    "lab5"
+  ],
+  "author": "gerard andrews",
+  "license": "ISC"
+}

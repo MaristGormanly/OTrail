@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+p { text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+h1 { text-align: center; 
+     color: white;
+     font-family: sans-serif;
+}
+
+ol { display: inline-block;
+     margin-left: auto;
+     margin-right: auto;
+     font-family: sans-serif;
+     }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;    
+    }
+div{
+    text-align: center;
+    font-family: sans-serif;
+}
+table {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+}

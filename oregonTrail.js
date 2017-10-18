@@ -19,6 +19,6 @@ app.get('/game', function (req,res) {
   res.sendFile('views/game.html',{root:__dirname})
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(1337, function () {
+  console.log('Example app listening on port 1337!')
 })

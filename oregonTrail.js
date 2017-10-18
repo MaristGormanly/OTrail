@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.static('public'))
 
-app.get('/index', function (req,res) {
+app.get('/', function (req,res) {
   res.sendFile('views/index.html',{root:__dirname})
 })
 

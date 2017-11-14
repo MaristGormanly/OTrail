@@ -42,15 +42,15 @@ var startGame4 = "<p> It's important to figure out when to start traveling. </p>
 +   "<div id=\"selectedOption\"> What is your choice?</div>";
 
 var startGame5 ="<p> Are the following settings what you picked? </p>"
-+   "<div id=\"professionChoice\"> </div> <br/>" 
-+   "<div id=\"monthChoice\"> </div> <br/>"
-+   "<div id=\"player0\"> </div> <br/>"
-+   "<div id=\"allowance\"> </div> <br/>"
-+   "<div id=\"player1\"> </div> <br/>"
-+   "<div id=\"player2\"> </div> <br/>"
-+   "<div id=\"player3\"> </div> <br/>"
-+   "<div id=\"player4\"> </div> <br/>"
-+   "<div id=\"player5\"> </div> <br/>"
++   "<h2> Profession: </h2> <div id=\"professionChoice\"> </div> <br/>" 
++   "<h2> Starting Month: </h2> <div id=\"monthChoice\"> </div> <br/>"
++   "<h2> Party Leader: </h2> <div id=\"player0\"> </div> <br/>"
++   "<h2> Money: </h2> <div id=\"allowance\"> </div> <br/>"
++   "<h2> Party Member 1 </h2> <div id=\"player1\"> </div> <br/>"
++   "<h2> Party Member 2 </h2> <div id=\"player2\"> </div> <br/>"
++   "<h2> Party Member 3 </h2> <div id=\"player3\"> </div> <br/>"
++   "<h2> Party Member 4 </h2> <div id=\"player4\"> </div> <br/>"
++   "<h2> Party Member 5 </h2> <div id=\"player5\"> </div> <br/>"
 + "<div id=\"gameStart\"> Start Traveling the Trail </div><br/>";
 
 exports.startGameScreens.push(startGame1)

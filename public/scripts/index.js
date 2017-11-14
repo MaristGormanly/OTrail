@@ -15,3 +15,9 @@ var el = document.getElementById('fadeInOut');
 el.onclick = function() {
     window.location = '/mainmenu'
 }
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode == 32) {
+        console.log('key pressed');
+        window.location = '/mainmenu';  
+    }
+})

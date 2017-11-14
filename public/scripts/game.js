@@ -42,6 +42,20 @@ function gameScreen(screenNumber) {
         })
     });
 }
+function transitionScreen() {
+    if (currentScreen == 1) {
+        gameScreen(1);
+    }
+    if (currentScreen == 2) {
+        gameScreen(2);
+    }
+    if (currentScreen == 3) {
+        gameScreen(3);
+    }
+    if (currentScreen == 4) {
+        gameScreen(4);
+    }
+}
 
 gameContainer.addEventListener('click', function(e) {
     //get the element clicked
@@ -130,6 +144,95 @@ gameContainer.addEventListener('click', function(e) {
             saveMonth('August');
             currentScreen++;
             gameScreen(4);
+        }
+    }
+})
+
+document.addEventListener('keypress', function(e) {
+    var keyCode = e.keyCode;
+    //get the element clicked
+    if (currentScreen == 0) {
+        switch (keyCode) {
+            case 49: 
+                saveProfession('banker');
+                currentScreen++;
+                gameScreen(1);
+                break;
+            case 50:  
+                saveProfession('carpenter');
+                console.log(keyCode);
+                currentScreen++;
+                gameScreen(1);
+                break;
+            case 51:
+                saveProfession('farmer');
+                currentScreen++;
+                gameScreen(1);
+                break;
+            case 52:  
+                console.log('learn more!');
+                break;
+            case 32: 
+                window.location = '/mainMenu';
+                break;
+    }
+}
+    if (currentScreen == 1) {
+        if (keyCode == 13) {
+            playerName = document.getElementById('player0').value;
+            savePlayer(0, playerName);
+            currentScreen++
+            gameScreen(2);
+        }
+    }
+    if (currentScreen == 2) {
+        if (keyCode == 13) {
+            player1Name = document.getElementById("player1").value;
+            savePlayer(1, player1Name);
+            player2Name = document.getElementById("player2").value;
+            savePlayer(2, player2Name);
+            player3Name = document.getElementById("player3").value;
+            savePlayer(3, player3Name);
+            player4Name = document.getElementById("player4").value;
+            savePlayer(4, player4Name);
+            player5Name = document.getElementById("player5").value;
+            savePlayer(5, player5Name);
+            currentScreen++;
+            gameScreen(3);
+        }
+    }
+    if (currentScreen == 3) {
+        switch (keyCode) {
+            case 49: 
+                saveMonth('March');
+                currentScreen++;
+                gameScreen(4);
+                break;
+            case 50: 
+                saveMonth('April');
+                currentScreen++;
+                gameScreen(4);
+                break;
+            case 51: 
+                saveMonth('May');
+                currentScreen++;
+                gameScreen(4);
+                break;
+            case 52: 
+                saveMonth('June');
+                currentScreen++;
+                gameScreen(4);
+                break;
+            case 53: 
+                saveMonth('July');
+                currentScreen++;
+                gameScreen(4);
+                break;
+            case 54: 
+                saveMonth('August');
+                currentScreen++;
+                gameScreen(4);
+                break;
         }
     }
 })

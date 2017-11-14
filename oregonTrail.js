@@ -65,6 +65,6 @@ app.get('/game/getSettings', function (req, res) {
     res.send(game.gameSettings);
     })
 
-app.listen(1337, function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 1337!')
 })

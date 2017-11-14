@@ -46,3 +46,10 @@ setTimeout(function() { // start a delay
   }, 100); // run every 0.1 second
 }, 2000); // wait to run after 2 seconds
 
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode == 32) {
+        console.log('key pressed');
+        window.location = '/mainmenu';  
+    }
+})
+

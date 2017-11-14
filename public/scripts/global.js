@@ -37,24 +37,4 @@ function toggleSound() {
     
     //(window["isSoundOn"]) ? isSoundOn = true : isSoundOn = false;
     checkSound();
-
 }
-
-
-document.onkeypress = function(nav) {
-    if (nav.keyCode === 32) {
-        console.log('key pressed');
-        window.location = '/mainmenu';     
-    }
-    if (nav.keyCode === 49) {
-        window.location = '/game';     
-    }
-    if (nav.keyCode === 51) {
-        window.location = '/topten';
-    }
-    if (nav.keyCode === 52) {
-        toggleSound();
-    }
-}
-
-

@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 
 var game = require('./controller/gameController');
+var topten = require('./controller/toptenController');
 app.use(express.static('public'))
 
 

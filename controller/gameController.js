@@ -316,3 +316,4 @@ exports.startGameScreens.push(startGame2)
 exports.startGameScreens.push(startGame3)
 exports.startGameScreens.push(startGame4)
 exports.startGameScreens.push(startGame5)
+}

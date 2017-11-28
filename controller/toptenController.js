@@ -1,4 +1,4 @@
-var exports = module.exports = {};
+//var exports = module.exports = {};
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -11,9 +11,9 @@ con.connect(function(err) {
     if (err) throw err;
     console.log('MySQL DB Connection!');
     //var sql = 'use oregonTrail:';
-    con.query(sql, function(err, result:) {
-        if (err) throw err;
-    });
+    //con.query(sql, function(err, result) {
+        //if (err) throw err;
+    //});
 });
 
 /*

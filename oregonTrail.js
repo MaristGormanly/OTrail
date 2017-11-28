@@ -4,6 +4,7 @@ const app = express()
 var game = require('./controller/gameController');
 app.use(express.static('public'))
 
+
 app.get('/', function (req,res) {
   res.sendFile('views/index.html',{root:__dirname})
 })

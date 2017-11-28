@@ -8,6 +8,8 @@ var player2Name;
 var player3Name;
 var player4Name;
 var player5Name;
+
+
 setTimeout(function() { // start a delay
   var fade = document.getElementById('fadeText'); // get required element
   fade.style.opacity = 1; // set opacity for the element to 1
@@ -41,20 +43,6 @@ function gameScreen(screenNumber) {
             }
         })
     });
-}
-function transitionScreen() {
-    if (currentScreen == 1) {
-        gameScreen(1);
-    }
-    if (currentScreen == 2) {
-        gameScreen(2);
-    }
-    if (currentScreen == 3) {
-        gameScreen(3);
-    }
-    if (currentScreen == 4) {
-        gameScreen(4);
-    }
 }
 
 gameContainer.addEventListener('click', function(e) {
@@ -237,9 +225,6 @@ document.addEventListener('keypress', function(e) {
     }
 })
 
-    
-
-
 function savePlayer(playerNumber, playerName) {
     fetch('/game/saveName/' + playerNumber + '/' + playerName).then(function(response) {
         console.log('/game/savePlayerName/' + playerNumber + '/' + playerName);
@@ -259,6 +244,7 @@ function saveProfession(profession) {
         }
     })
 }
+
 function saveMonth(startMonth) {
     fetch('/game/saveStartMonth/' + startMonth).then(function(response) {
         if (response.status != 200) {
@@ -295,24 +281,4 @@ function populateSettings(data) {
         document.getElementById("player5").innerHTML = data.playerNames[5];
     }
 }
-
-/*function getMenuOption(myKey) {
-    var charCode =(typeof myKey.which == "number") ? myKey.which.keyCode
-    switch(charCode) {
-        case 0x31:
-            break;
-        case 0x32:
-            break;
-        case 0x33:
-            break;
-        case 0x34:
-            break;
-        case 0x21:
-            //go to mainMenu
-            break;
-        default:
-            break;
-    }
-}*/
-
 gameScreen(0);

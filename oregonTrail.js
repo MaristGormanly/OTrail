@@ -22,6 +22,10 @@ app.get('/game', function (req,res) {
   res.sendFile('views/game.html',{root:__dirname})
 })
 
+app.get('/trail', function (req,res) {
+  res.sendFile('views/trail.html',{root:__dirname})
+})
+
 //gets the html for the game screen the player is requesting
 app.get('/game/getNewGameScreen/:screenId', function(req, res) {
     //get the screen
@@ -32,7 +36,6 @@ app.get('/game/getNewGameScreen/:screenId', function(req, res) {
     res.setHeader('Content-Type', 'text/html');
     res.send(gameScreen);
 })
-
 
 app.get('/game/saveProfession/:profession', function (req, res) {
     //assign money at start
@@ -67,6 +70,41 @@ app.get('/game/getSettings', function (req, res) {
     res.send(game.gameSettings);
     })
 
+
+app.route('/game/getGameUpdate')
+    .get(game.getGameUpdate)
+
+app.route('/game/changePace/:pace')
+    .get(game.changePace)
+    
+app.route('/game/changeRation/:ration')
+    .get(game.changeRation)
+
+app.route('/game/resetGame')
+    .get(game.resetGame)
+/*    
+    const express = require('express')
+var bodyParser = require('body-parser');
+const app = express()
+app.use(bodyParser.json({ type: 'application/json' }));
+
+var users = require('./controllers/userController');
+
+app.route('/api/users')
+	.get(users.getUsers)
+	.post(users.saveUser)
+
+app.route('/api/users/:userId')
+	.get(users.getUser)
+	.delete(users.deleteUser)
+	.patch(users.updateUser)
+
+//Top Ten Settings
+app.route('/game/topTen')
+    .get(topTen.getTopScores)
+    .post(topTen.saveTopScore)
+    
+*/
 app.listen(1337, function () {
   console.log('Example app listening on port 1337!')
 })

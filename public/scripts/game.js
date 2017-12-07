@@ -134,6 +134,11 @@ gameContainer.addEventListener('click', function(e) {
             gameScreen(4);
         }
     }
+    if (currentScreen == 4) {
+        if(targetElement.id == 'gameStart') {
+            window.location = '/trail';
+        }
+    }
 })
 
 document.addEventListener('keypress', function(e) {
@@ -221,6 +226,11 @@ document.addEventListener('keypress', function(e) {
                 currentScreen++;
                 gameScreen(4);
                 break;
+        }
+    }
+    if (currentScreen == 4) {
+        if (keyCode == 13) {
+            window.location = '/trail';
         }
     }
 })

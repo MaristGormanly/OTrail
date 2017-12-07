@@ -1,4 +1,5 @@
-//var exports = module.exports = {};
+
+/*var exports = module.exports = {};
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -10,12 +11,13 @@ var con = mysql.createConnection({
 con.connect(function(err) {
     if (err) throw err;
     console.log('MySQL DB Connection!');
-    //var sql = 'use oregonTrail:';
-    //con.query(sql, function(err, result) {
-        //if (err) throw err;
-    //});
+    var sql = 'use oregonTrail:';
+    con.query(sql, function(err, result) {
+        if (err) throw err;
+    });
 });
-
+*/
+//
 /*
 function topScore(inName, inScore, inDate) {
     //This object forces the type, we are
@@ -63,21 +65,6 @@ var topten = require('/./controllers/toptenController.js')
 
 //game routes
 
-app.route('/game/changePace/:pace')
-    .get(game.changePace)
 
-app.route('/game/getGameUpdate')
-    .get(game.getUpdate)
-
-app.route('/game/resetGame')
-    .get(game.resetGame)
-
-//Top Ten Settings
-
-app.route('/game/topTen')
-    .get(topTen.getTopScores)
-    .post(topTen.saveTopScore)
-    
 //Get 
-
-
+*/

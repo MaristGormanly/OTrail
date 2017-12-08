@@ -19,10 +19,21 @@ img {
     font-family: sans-serif;    
     }
     
+#wagon {
+    background-size: 100% 100%;
+    width: 378px;
+    height: 193px;
+    left: 35%;
+    right: 35%;
+    position: relative;
+}   
+ 
 #wagonImage {
-    display: block;
-    height: 100px;
-    right: 100%
+    position: absolute;
+    width: 116px;
+    border: 0px;
+    height: 76px;
+    margin-bottom: 5px;
     }
     
 div{

@@ -196,10 +196,9 @@ function resetSettings() {
 
 
 function moveWagon(miles) {
-    var mileMovement = miles / 5;
-    var wagonControl = document.getElementById('wagonImage');
-    console.log(miles);
-    wagonControl.style.left = mileMovement + '%';
+    var mileMovement = (miles / 5);
+    //console.log(miles);
+    document.getElementById('wagonImage').style.right = mileMovement + '%';
 }
 
 function populateSettings(data) {
